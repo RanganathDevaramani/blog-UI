@@ -93,7 +93,7 @@ class UserLogin extends React.Component{
             username: '', email: '', password: ''
         }))
         setTimeout(() => {
-            this.props.history.push('/login')
+            this.props.history.push('/posts')
         }, 2000)
     }
 
