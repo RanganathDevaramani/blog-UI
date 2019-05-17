@@ -27,7 +27,7 @@ class ListAuthor extends React.Component{
                         this.state.authors.map(author => {
                             return(
                                 <div> 
-                                    <li><Link to={`/author/${author.id}`}>{author.name}</Link></li>
+                                    <li key={author.id}><Link to={`/author/${author.id}`}>{author.name}</Link></li>
                                 </div>
                             )
                         })

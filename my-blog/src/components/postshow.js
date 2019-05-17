@@ -34,17 +34,6 @@ class PostShow extends React.Component {
         axios.get("https://jsonplaceholder.typicode.com/posts")
             .then(response => this.setState(()=> ({posts:response.data})))
    }
-
-    toggleNext = () => {
-       
-       
-    }
-    togglePrev =() => {
-       
-    }
-
-
-
     render(){
         return(
             <div>
@@ -53,10 +42,6 @@ class PostShow extends React.Component {
                 <p>{this.state.post.body}</p>
                     <span align='right'>Author --<Link to={`/author/${this.state.author.id}`} >{this.state.author.name}</Link></span>
                 <br/>
-                <div align="center">
-                    <button  onClick ={this.togglePrev}>Prev</button>{' '}
-                    <button  onClick = {this.toggleNext}>Next</button>
-                </div>
                 
                 <br/>
                 <h4>Comments for this post</h4><br/>

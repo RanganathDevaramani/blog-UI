@@ -7,7 +7,7 @@ class AuthorShow extends React.Component{
         super()
         this.state = {
             author : {},
-            posts : []
+            posts : [],
         }
     }
 
@@ -23,7 +23,8 @@ class AuthorShow extends React.Component{
     
     render(){
         return(
-            <div><h2>{this.state.author.name}</h2>
+            <div>
+                <h2>{this.state.author.name}</h2>
                 <p>{this.state.author.email}</p>
                 <h4>Posts of {this.state.author.name}</h4>
                 <ul>
